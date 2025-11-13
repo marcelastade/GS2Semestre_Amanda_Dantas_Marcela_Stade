@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "GS2.Controllers.PromptController",
+    "Method": "GetPromptById",
+    "RelativePath": "api/Prompt/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GS2.Controllers.PromptController",
+    "Method": "Delete",
+    "RelativePath": "api/Prompt/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GS2.Controllers.PromptController",
+    "Method": "AtualizarPrompt",
+    "RelativePath": "api/Prompt/{id}/prompt",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "novoPrompt",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GS2.Controllers.PromptController",
+    "Method": "GetAllPrompts",
+    "RelativePath": "api/Prompt/allPrompts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GS2.Controllers.PromptController",
+    "Method": "AddPrompt",
+    "RelativePath": "api/Prompt/cadastrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "prompt",
+        "Type": "GS2.Domain.Prompt",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
