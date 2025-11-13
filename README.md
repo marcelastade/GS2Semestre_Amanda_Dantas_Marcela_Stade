@@ -42,17 +42,8 @@ A classe PromptRepository utiliza o Dapper e o MySqlConnector para realizar oper
 
 # ⚙️ Implementação do Core (Branch: core)
 
-- Controller: PromptController
+- Controller (PromptController): Responsável pelos endpoints da API. Permite cadastrar novos prompts e futuramente buscar ou atualizar versões.
 
-Responsável pelos endpoints da API.
-Permite cadastrar novos prompts e futuramente buscar ou atualizar versões.
+- Camada de Serviço (Service): Foi criada a abstração ICacheService e a classe CacheService, que implementa cache em memória.
 
-- Camada de Serviço (Service)
-
-- Interface e implementação do Cache
-
-Foi criada a abstração ICacheService e a classe CacheService, que implementa cache em memória.
-
-- Validações 
-
-Foram implementadas as validações utilizando try/catch.
+- Validações: Foram implementadas as validações utilizando try/catch.
