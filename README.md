@@ -2,6 +2,7 @@
 
 # Estrutura do Projeto
 
+```plaintext
 GS2/
 ├── Controllers/
 │   └── PromptController.cs
@@ -14,6 +15,7 @@ GS2/
 │   ├── ICacheService.cs
 │   └── CacheService.cs
 └── Program.cs
+```
 
 # 📦 Modelagem do Domínio (Branch: master)
 
