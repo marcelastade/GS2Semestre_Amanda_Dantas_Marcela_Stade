@@ -22,6 +22,8 @@ GS2/
 Modelamos a classe principal e garantimos a conexão com o banco de dados via Dapper.
 
 🧱 Classe Prompt
+
+```plaintext
 namespace GS2.Domain
 {
     public class Prompt
@@ -32,6 +34,7 @@ namespace GS2.Domain
         public DateTime DataPrompt { get; set; }
     }
 }
+```
 
 💾 Conexão com Banco
 
