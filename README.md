@@ -35,12 +35,22 @@ namespace GS2.Domain
     }
 }
 ```
+# 💾 Banco de Dados
 
-💾 Conexão com Banco
+```plaintext
+CREATE TABLE fiap.Prompt (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    NomeUsuario VARCHAR(255) NOT NULL,
+    DescPrompt VARCHAR(255) NOT NULL,
+    DataPrompt DATETIME DEFAULT NOW()
+);
+```
 
-A classe PromptRepository utiliza o Dapper e o MySqlConnector para realizar operações no banco de dados. A conexão é criada no arquivo Program.cs.
+ - Conexão com Banco: A classe PromptRepository utiliza o Dapper e o MySqlConnector para realizar operações no banco de dados. A conexão é criada no arquivo Program.cs.
 
 # ⚙️ Implementação do Core (Branch: core)
+
+- Repository: Foram criadas a interface IPromptRepository e a classe PromptRepository que armazenam os métodos responsáveis por fazer as operações GET, POST, PUT e DELETE.
 
 - Controller (PromptController): Responsável pelos endpoints da API. Permite cadastrar novos prompts e futuramente buscar ou atualizar versões.
 
