@@ -2,15 +2,15 @@
 
 # Estrutura do Projeto
 
-GS2
-├── Controllers
+GS2/
+├── Controllers/
 │   └── PromptController.cs
-├── Domain
+├── Domain/
 │   └── Prompt.cs
-├── Repository
+├── Repository/
 │   ├── IPromptRepository.cs
 │   └── PromptRepository.cs
-├── Service
+├── Service/
 │   ├── ICacheService.cs
 │   └── CacheService.cs
 └── Program.cs
